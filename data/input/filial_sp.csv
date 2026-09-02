@@ -1,0 +1,11 @@
+﻿Data_Venda,Codigo_Cliente,Nome_Cliente,Categoria_Produto,Valor_Bruto,Valor_Desconto,Canal_Venda
+01/08/2026,CLI-101,Tecnologia Avançada S/A,Licença de Software,"R$ 4.500,00","R$ 200,00",E-commerce
+02/08/2026,CLI-102,Consultoria e Gestão Alfa,Serviços de Consultoria,"R$ 12.000,00","R$ 1.000,00",Direto (B2B)
+03/08/2026,CLI-103,Distribuidora do Sul,Hardware / Servidores,"R$ 8.750,50","R$ 250,00",Direto (B2B)
+05/08/2026,CLI-104,Comércio de Eletrônicos SP,Licença de Software,"R$ 3.200,00","R$ 0,00",E-commerce
+10/08/2026,CLI-105,Logística Expressa Ltda,Suporte Técnico,"R$ 1.500,00","R$ 50,00",Portal do Cliente
+12/08/2026,CLI-106,Varejo Central,Hardware / Servidores,"R$ 15.400,00","R$ 1.400,00",Direto (B2B)
+15/08/2026,CLI-107,Indústria Metalúrgica Paulista,Serviços de Consultoria,"R$ 9.800,00","R$ 500,00",Direto (B2B)
+18/08/2026,CLI-108,Serviços Globais Brasil,Licença de Software,"R$ 2.300,00","R$ 100,00",E-commerce
+20/08/2026,CLI-109,Sistemas e Soluções Tech,Suporte Técnico,"R$ 1.850,00","R$ 0,00",Portal do Cliente
+22/08/2026,CLI-110,Inovações Digitais,Hardware / Servidores,"R$ 11.200,00","R$ 800,00",Direto (B2B)

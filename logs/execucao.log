@@ -1,0 +1,83 @@
+2026-08-25 12:10:35,908 - INFO - Iniciando execução da automação RPA.
+2026-08-25 12:10:35,909 - INFO - Iniciando processo de ETL.
+2026-08-25 12:10:35,913 - INFO - Dados de São Paulo carregados com sucesso.
+2026-08-25 12:10:36,821 - INFO - Dados de Minas Gerais carregados com sucesso.
+2026-08-25 12:10:36,836 - INFO - Dados do Rio de Janeiro carregados com sucesso.
+2026-08-25 12:10:36,844 - INFO - Limpeza concluída. 2 linhas duplicadas foram removidas.
+2026-08-25 12:10:36,846 - CRITICAL - Falha crítica durante a execução do robô: No module named 'xlsxwriter'
+Traceback (most recent call last):
+  File "C:\Users\mariagardelari\OneDrive\Área de Trabalho\rpa-consolidador-vendas\main.py", line 18, in orquestrar_automacao
+    dashboard.gerar_relatorio_excel_com_dashboard(df_consolidado)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\mariagardelari\OneDrive\Área de Trabalho\rpa-consolidador-vendas\src\dashboard.py", line 12, in gerar_relatorio_excel_com_dashboard
+    with pd.ExcelWriter(caminho_saida, engine="xlsxwriter") as writer:
+         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mariagardelari\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\excel\_xlsxwriter.py", line 197, in __init__
+    from xlsxwriter import Workbook
+ModuleNotFoundError: No module named 'xlsxwriter'
+2026-08-25 12:11:18,646 - INFO - Iniciando execução da automação RPA.
+2026-08-25 12:11:18,646 - INFO - Iniciando processo de ETL.
+2026-08-25 12:11:18,650 - INFO - Dados de São Paulo carregados com sucesso.
+2026-08-25 12:11:19,006 - INFO - Dados de Minas Gerais carregados com sucesso.
+2026-08-25 12:11:19,012 - INFO - Dados do Rio de Janeiro carregados com sucesso.
+2026-08-25 12:11:19,018 - INFO - Limpeza concluída. 2 linhas duplicadas foram removidas.
+2026-08-25 12:11:19,135 - INFO - Relatório e Dashboard gerados com sucesso em: C:\Users\mariagardelari\OneDrive\Área de Trabalho\rpa-consolidador-vendas\data\output\Relatorio_Consolidado_Vendas.xlsx
+2026-08-25 13:16:12,504 - INFO - Iniciando execução da automação RPA.
+2026-08-25 13:16:12,822 - CRITICAL - Falha crítica durante a execução do robô: [Errno 13] Permission denied: 'C:\\Users\\mariagardelari\\OneDrive\\Área de Trabalho\\rpa-consolidador-vendas\\data\\output\\Relatorio_Consolidado_Vendas.xlsx'
+Traceback (most recent call last):
+  File "C:\Users\mariagardelari\OneDrive\Área de Trabalho\rpa-consolidador-vendas\main.py", line 18, in orquestrar_automacao
+    dashboard.gerar_relatorio_excel_com_dashboard(df_consolidado)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\mariagardelari\OneDrive\Área de Trabalho\rpa-consolidador-vendas\src\dashboard.py", line 9, in gerar_relatorio_excel_com_dashboard
+    with pd.ExcelWriter(caminho_saida, engine="xlsxwriter") as writer:
+         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mariagardelari\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\excel\_xlsxwriter.py", line 204, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        path,
+        ^^^^^
+    ...<6 lines>...
+        engine_kwargs=engine_kwargs,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mariagardelari\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\excel\_base.py", line 1281, in __init__
+    self._handles = get_handle(
+                    ~~~~~~~~~~^
+        path, mode, storage_options=storage_options, is_text=False
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mariagardelari\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\common.py", line 935, in get_handle
+    handle = open(handle, ioargs.mode)
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\mariagardelari\\OneDrive\\Área de Trabalho\\rpa-consolidador-vendas\\data\\output\\Relatorio_Consolidado_Vendas.xlsx'
+2026-08-25 13:16:26,772 - INFO - Iniciando execução da automação RPA.
+2026-08-25 13:16:27,048 - CRITICAL - Falha crítica durante a execução do robô: [Errno 13] Permission denied: 'C:\\Users\\mariagardelari\\OneDrive\\Área de Trabalho\\rpa-consolidador-vendas\\data\\output\\Relatorio_Consolidado_Vendas.xlsx'
+Traceback (most recent call last):
+  File "C:\Users\mariagardelari\OneDrive\Área de Trabalho\rpa-consolidador-vendas\main.py", line 18, in orquestrar_automacao
+    dashboard.gerar_relatorio_excel_com_dashboard(df_consolidado)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\mariagardelari\OneDrive\Área de Trabalho\rpa-consolidador-vendas\src\dashboard.py", line 9, in gerar_relatorio_excel_com_dashboard
+    with pd.ExcelWriter(caminho_saida, engine="xlsxwriter") as writer:
+         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mariagardelari\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\excel\_xlsxwriter.py", line 204, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        path,
+        ^^^^^
+    ...<6 lines>...
+        engine_kwargs=engine_kwargs,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mariagardelari\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\excel\_base.py", line 1281, in __init__
+    self._handles = get_handle(
+                    ~~~~~~~~~~^
+        path, mode, storage_options=storage_options, is_text=False
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mariagardelari\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\common.py", line 935, in get_handle
+    handle = open(handle, ioargs.mode)
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\mariagardelari\\OneDrive\\Área de Trabalho\\rpa-consolidador-vendas\\data\\output\\Relatorio_Consolidado_Vendas.xlsx'
+2026-08-25 13:16:59,515 - INFO - Iniciando execução da automação RPA.
